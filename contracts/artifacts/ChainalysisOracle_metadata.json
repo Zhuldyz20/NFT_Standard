@@ -1,0 +1,65 @@
+{
+	"compiler": {
+		"version": "0.8.20+commit.a1b79de6"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "addr",
+						"type": "address"
+					}
+				],
+				"name": "isSanctioned",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/ChainalysisOracle.sol": "ChainalysisOracle"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/ChainalysisOracle.sol": {
+			"keccak256": "0x4d6ca27a29f6d8e0d2d240c5ec04143e1c8f89103e152f7487f7a37390221980",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://df67dfa3db64004ef873767731471c51385edeac75bee54c4616b2a1d3b8865f",
+				"dweb:/ipfs/QmVXS31zcFdkuJgNuS9x14f7rdrqXuHTBfr99wQucgRWjY"
+			]
+		}
+	},
+	"version": 1
+}

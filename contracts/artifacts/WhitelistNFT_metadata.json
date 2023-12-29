@@ -6,7 +6,18 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "symbol",
+						"type": "string"
+					}
+				],
 				"stateMutability": "nonpayable",
 				"type": "constructor"
 			},
@@ -654,6 +665,19 @@
 			{
 				"inputs": [
 					{
+						"internalType": "address",
+						"name": "blacklistAddress",
+						"type": "address"
+					}
+				],
+				"name": "setBlacklistContract",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
 						"internalType": "bytes4",
 						"name": "interfaceId",
 						"type": "bytes4"
@@ -750,6 +774,7 @@
 			}
 		],
 		"devdoc": {
+			"details": "Implements a whitelist and blacklist system for NFT minting and transfer",
 			"errors": {
 				"AccessControlBadConfirmation()": [
 					{
@@ -903,6 +928,7 @@
 					"details": "See {IERC721-transferFrom}."
 				}
 			},
+			"title": "WhitelistNFT contract",
 			"version": 1
 		},
 		"userdoc": {
@@ -1039,12 +1065,20 @@
 				"dweb:/ipfs/QmVBEei6aTnvYNZp2CHYVNKyZS4q1KkjANfY39WVXZXVoT"
 			]
 		},
-		"contracts/Whitelist.sol": {
-			"keccak256": "0x7f57a83d2fe54cf808816a0d37b5098aeed6c3811c8da1c40cceb5a1c1b713a0",
+		"contracts/Blacklist.sol": {
+			"keccak256": "0x5f2dc4a0106c3ed720019d5a12bdfa1bb2a923ce5b913b7bbd8cfa710cdd494e",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://f13fd6c86dfd6c393c8a17158aff4ba0744c9bdd3f5aa8c00880c3a165dee54f",
-				"dweb:/ipfs/QmNYy1yBnQpzvNY55tLDZEtNPuzE9EQdG8fkxnd5dHR9LS"
+				"bzz-raw://5d36c1dd3b7082063721d8bcb9ace501526d659d873fc587dca45e82fd3fd891",
+				"dweb:/ipfs/QmSEgyLFK7t2id57dQJCjbuSq58dr9hMBdYaYo8uGZfwbi"
+			]
+		},
+		"contracts/Whitelist.sol": {
+			"keccak256": "0x07b4df8f48d790543bcf70cb435c5f66f69cd3c7239b126c0519d87bd75d0439",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://73d88f43738cbb99bd1b6f48a8cf4028ca0ba385e3bb391e911d94b04a1c9e42",
+				"dweb:/ipfs/QmbLuyg5T7CzQwoXcLYBqcatxMYkVg1J6vqV6uitysC1jD"
 			]
 		}
 	},
